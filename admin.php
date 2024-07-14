@@ -1,11 +1,3 @@
-<!--
-    Rafael Marco Manubay
-    Student ID: 22169755
-    Student Username: dwx3625
-    admin.php: A PHP file that contains all the scripts used for processing the search term, retrieval of booking requests rows, and creation of table.
--->
-
-
 <?php
 
 // Database connection

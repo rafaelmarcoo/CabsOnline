@@ -1,11 +1,3 @@
-/*
-    Rafael Marco Manubay
-    Student ID: 22169755
-    Student Username: dwx3625
-    booking.js: A JavaScript file containing all the functions for validating user inputs, showing current date and time within form fields, and utilising XHR for client-server communication.
-*/
-
-
 // Get current date and format it
 var today = new Date();
 var dd = today.getDate();

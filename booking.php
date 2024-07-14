@@ -1,10 +1,3 @@
-<!--
-    Rafael Marco Manubay
-    Student ID: 22169755
-    Student Username: dwx3625
-    booking.php: A PHP file which contains receiving user inputs for processing through the database.
--->
-
 <?php
 
 // Database connection

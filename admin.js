@@ -1,11 +1,3 @@
-/*
-    Rafael Marco Manubay
-    Student ID: 22169755
-    Student Username: dwx3625
-    admin.js: A JavaScript file containing the functions that retrieve the user search term and assigning booking requests. And utilising XHR for client-server communication.
-*/
-
-
 var xhr = new XMLHttpRequest();
 
 // Function to get booking data based on the search input
