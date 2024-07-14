@@ -1,0 +1,15 @@
+SELECT MAX(booking_no) AS maxBooking FROM CabsOnline;
+
+INSERT INTO `CabsOnline`(`booking_no`, `cust_name`, `phone_number`, `unit_number`, `street_number`, `street_name`, `suburb`, `destination_suburb`, `pickup_date`, `pickup_time`, `status`) VALUES ('$bookingRef','$cname','$phone','$unumber','$snumber','$stname','$sbname','$dsbname','$date','$time','$status');
+
+UPDATE `CabsOnline` SET status = 'ASSIGNED' WHERE booking_no = '$assignReference';
+
+SELECT booking_no, cust_name, phone_number, suburb, destination_suburb, 
+CONCAT(DATE_FORMAT(pickup_date, '%d/%m/%Y'), ' ', TIME_FORMAT(pickup_time,'%H:%i')) as pickup_datetime, status 
+FROM CabsOnline 
+WHERE CONCAT(pickup_date, ' ', pickup_time) BETWEEN NOW() AND NOW() + INTERVAL 2 HOUR;
+
+SELECT booking_no, cust_name, phone_number, suburb, destination_suburb, 
+CONCAT(DATE_FORMAT(pickup_date, '%d-%m-%Y'), ' ', pickup_time) as pickup_datetime, status 
+FROM CabsOnline 
+WHERE booking_no LIKE '%$bsearch%';

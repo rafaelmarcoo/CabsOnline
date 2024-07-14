@@ -1,0 +1,65 @@
+<!--
+    Rafael Marco Manubay
+    Student ID: 22169755
+    Student Username: dwx3625
+    booking.html: An HTML page containing a form for users to fill out to make
+    a taxi booking request
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CabsOnline</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="bookingDiv">
+        <h1>CabsOnline</h1>
+        
+        <!-- Form for booking a cab -->
+        <form class="postform" name="formDetails" method="POST" onsubmit="return validate() && submitForm()">
+
+            <label>Customer Name*</label>
+            <input type="text" name="cname" required> <br><br>
+
+            <label>Phone Number*</label>
+            <input type="text" name="phone" minlength="10" maxlength="12" required> <br><br>
+
+            <label>Unit Number</label>
+            <input type="text" name="unumber"> <br><br>
+
+            <label>Street Number*</label>
+            <input type="text" name="snumber" required> <br><br>
+
+            <label>Street Name*</label>
+            <input type="text" name="stname" required> <br><br>
+
+            <label>Suburb</label>
+            <input type="text" name="sbname"> <br><br>
+
+            <label>Destination Suburb</label>
+            <input type="text" name="dsbname"> <br><br>
+            
+            <label>Pick-Up Date*</label>
+            <input id="currentDate" type="date" name="date" required> <br><br>
+
+            <label>Pick-Up Time*</label>
+            <input id="currentTime" type="time" name="time" value="20:00" required> <br>
+
+            <input class="button" type="submit" value="Submit">
+            
+        </form>
+
+        <!-- Div to display booking confirmation -->
+        <div class="bookingConfirm" id="reference"></div>
+    </div>
+
+    
+</body>
+
+<script type="text/javascript" src="booking.js"></script>
+
+</html>

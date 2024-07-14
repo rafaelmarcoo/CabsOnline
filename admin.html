@@ -1,0 +1,35 @@
+<!--
+    Rafael Marco Manubay
+    Student ID: 22169755
+    Student Username: dwx3625
+    admin.html: An HTML page containing a search form to retrieve booking requests.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CabsOnline</title>
+    <script type="text/javascript" src="admin.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="Content">
+        <h1>CabsOnline Admin</h1>
+        
+        <!-- Input field for booking reference search and button to execute the search -->
+        <label>Search for booking requests: </label>
+        <input class="form" type="text" name="bsearch" id="bsearch" placeholder="BRN#####">
+        <input class="button" type="button" name="sbutton" value="Search" onClick="getData('admin.php', 'reference', document.getElementById('bsearch').value)" value="Fetch from server" >
+        
+    </div>
+
+    <!-- Div to display booking assignment status -->
+    <div id="assignReference"></div>
+
+    <!-- Div to display search results -->
+    <div class="content" id="reference"></div>
+</body>
+</html>
