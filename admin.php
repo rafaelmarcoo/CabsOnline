@@ -1,7 +1,7 @@
 <?php
 
 // Database connection
-require_once("../../files/settings.php"); 
+require_once("connection.php"); 
 $dbConnect = @mysqli_connect($host, $user, $pswd);
 mysqli_select_db($dbConnect, $dbnm);
 
