@@ -35,7 +35,7 @@ if ($sqlHighestResult)
     }
 
     // Increment booking number for new booking
-    $bookingNo += 1;
+    $bookingNo = (int)$bookingNo + 1;
     $bookingRef = "BRN" . str_pad($bookingNo, 5, '0', STR_PAD_LEFT);
 
     $status = "unassigned";
