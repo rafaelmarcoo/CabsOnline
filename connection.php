@@ -2,5 +2,5 @@
     $host = "localhost";
     $user = "root";
     $pswd = "";
-    $dbName = "cabsonline";
+    $dbnm = "cabsonline";
 ?>
